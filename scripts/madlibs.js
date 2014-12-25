@@ -1,5 +1,5 @@
 angular.module('madApp', [])
-    .constant('VERSION', 1.0)
-    .controller('MadController', function(){
-        
+    .constant('VERSION', 0.1)
+    .controller('MadController', function(VERSION, $scope){
+        $scope.version = VERSION;
     });
