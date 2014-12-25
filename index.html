@@ -20,7 +20,8 @@
            <div class="row section">
                <div class="sectionheading">Provide the following words:</div>    
                <div class="col col_3">
-                   <input type="text" placeholder="Female name" ng-model="female_name"/>
+                   <input type="checkbox" ng-model="male"/>
+                   <input type="text" placeholder="{{male?'Male':'Female'}} name" ng-model="female_name"/>
                    <input type="text" placeholder="Job Title" ng-model="job_title"/>
                    <input type="text" placeholder="Tedious Task" ng-model="tedious_task">
                </div>
@@ -37,8 +38,8 @@
            </div>
            <div class="row section">
               <p>
-               {{female_name}} was a {{job_title}} who loved technology. Although she loved parts of her job, she absolutely hated {{tedious_task}} and {{dirty_task}}. So, {{female_name}} met with her life mentor {{celebrity}} who told her to learn how to {{useless_skill}} with Thinkful. Thinkful didn't offer a course on {{useless_skill}} so she studied programming instead.
-What a great decision! With her new skills, {{female_name}} built a(n) {{adjective}} robot named {{obnoxious_celebrity}} that not only loved {{dirty_task}} but did it {{huge_number}} times faster. 
+               {{female_name}} was a {{job_title}} who loved technology. Although {{male?'he':'she'}} loved parts of {{male?'his':'her'}} job, {{male?'he':'she'}} absolutely hated {{tedious_task}} and {{dirty_task}}. So, {{female_name}} met with {{male?'his':'her'}} life mentor {{celebrity}} who told {{male?'his':'her'}} to learn how to {{useless_skill}} with Thinkful. Thinkful didn't offer a course on {{useless_skill}} so {{male?'he':'she'}} studied programming instead.
+What a great decision! With {{male?'his':'her'}} new skills, {{female_name}} built a(n) {{adjective}} robot named {{obnoxious_celebrity}} that not only loved {{dirty_task}} but did it {{huge_number}} times faster. 
                </p>
            </div>
            
