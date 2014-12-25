@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="">
+<html lang="en" ng-app="madApp">
 <head>
     <meta charset="UTF-8">
     <title>Thinkful Madlibs Exercise (Unit 1 Lesson 2)</title>
     <link href="styles/madlibs.css" rel="stylesheet" type="text/css"/>
 </head>
-<body>
+<body ng-controller = "MadController">
     <div class="wrapper">
            <div class="row">
                <div class="col col_2">
@@ -44,5 +44,6 @@ What a great decision! With her new skills, {{female_name}} built a(n) {{adjecti
         
     </div>
     <script src="bower_components/angular/angular.min.js"></script>
+    <script src="scripts/madlibs.js"></script>
 </body>
 </html>
