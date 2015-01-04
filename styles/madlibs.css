@@ -47,12 +47,22 @@ body {
     border-top:solid 1px #000000;
 }
 
-input{
+.input{
     display:block;
     margin-top:10px;
 }
+
+.error{
+    color:#FF0000;
+    font-size: 0.8em;
+}
+
 .small{
     font-size: 0.8em;
     color:#AAA;
     
+}
+
+.offset_3{
+    margin-left:33%;
 }
